@@ -4,12 +4,13 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import PanoramaFishEyeIcon from '@mui/icons-material/PanoramaFishEye';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
-const Main = () => {
+const Main = ({ showBorder, showTracks, showSolver, showCustomMsg }) => {
+
     return(
         <>
             <div className="d-flex flex-column">
-                <input className="main-border input-md" type="text" placeholder="Nombre de la actividad"/>
-                <div className="main-border input-md mt-2 color-muted">
+                <input className="main-border input-sm" type="text" placeholder="Nombre de la actividad"/>
+                <div className="main-border input-sm mt-2 color-muted">
                     Recurso
                 </div>
                 <textarea className="main-border input-lg mt-2" placeholder="Enunciado"></textarea>
@@ -22,20 +23,33 @@ const Main = () => {
                 </div>  
                 <div className="position-between mt-3">
                     <PanoramaFishEyeIcon className="circle-icon" />
-                    <input className="main-border input-md w-90 ml-3 mr-3" type="text" placeholder="Alternativa 1"/>
+                    <input className="main-border input-sm w-90 ml-3 mr-3" type="text" placeholder="Alternativa 1"/>
                     <MoreVertIcon className="color-highlight" />
                 </div>
                 <div className="position-between mt-3">
                     <PanoramaFishEyeIcon className="circle-icon" />
-                    <input className="main-border input-md w-90 ml-3 mr-3" type="text" placeholder="Alternativa 2"/>
+                    <input className="main-border input-sm w-90 ml-3 mr-3" type="text" placeholder="Alternativa 2"/>
                     <MoreVertIcon className="color-highlight" />
                 </div>
                 <div className="position-between mt-3">
                     <PanoramaFishEyeIcon className="circle-icon" />
-                    <input className="main-border input-md w-90 ml-3 mr-3" type="text" placeholder="Alternativa 3"/>
+                    <input className="main-border input-sm w-90 ml-3 mr-3" type="text" placeholder="Alternativa 3"/>
                     <MoreVertIcon className="color-highlight" />
                 </div>
             </div>
+            {showBorder &&
+                <div className="main-border d-flex flex-column mt-4">
+                    {showTracks &&
+                        <input className="main-border input-md" type="text" placeholder="Pistas"/>
+                    }
+                    {showSolver &&
+                        <input className="main-border input-md mt-2" type="text" placeholder="Solucionario"/>
+                    }
+                    {showCustomMsg &&
+                        <textarea className="main-border input-lg mt-2" type="text" placeholder="Personalizar mensaje"/>
+                    }
+                </div>
+            }
         </>
     );
 }

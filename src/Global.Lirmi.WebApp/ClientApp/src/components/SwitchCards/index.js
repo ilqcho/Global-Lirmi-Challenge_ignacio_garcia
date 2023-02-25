@@ -1,11 +1,11 @@
 import React from 'react';
 import './index.css';
 
-const SwitchCards = ({ title, text, id }) => {
-    const [checked, setChecked] = React.useState(false);
+const SwitchCards = ({ id, title, text, onAction }) => {
 
-    const handleChange = () => {
-        setChecked(!checked);
+    const handleChange = (e) => {
+        const isChecked = e.target.checked;
+        onAction(isChecked, id);
     };
 
     return(
@@ -17,12 +17,11 @@ const SwitchCards = ({ title, text, id }) => {
                 </div>
                 <div>
                     <label className="switch">
-                        <input type="checkbox" onChange={handleChange} checked={checked} />
+                        <input type="checkbox" onChange={handleChange} />
                         <span className="slider round"></span>
                     </label>
                 </div>
             </div>
-            {/* <p>Is "My Value" checked? {checked.toString()}</p> */}
         </div>
     );
 }

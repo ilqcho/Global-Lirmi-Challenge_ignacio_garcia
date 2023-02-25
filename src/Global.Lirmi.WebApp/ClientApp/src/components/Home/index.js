@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './index.css';
 import AddIcon from '@mui/icons-material/Add';
 import Button from '../Button';
@@ -9,6 +9,9 @@ import Main from '../Main';
 import SwitchCards from '../SwitchCards'
 
 const Home = () => {
+    const [isChecked1, setIsChecked1] = useState(false);
+    const [isChecked2, setIsChecked2] = useState(false);
+    const [isChecked3, setIsChecked3] = useState(false);
 
     const experienceCards = experienceData.map((card, i) => 
         <div key={i} className="mt-3 d-flex justify-content-between">
@@ -18,12 +21,28 @@ const Home = () => {
             </div>
         </div>
     );
+    
+    const handleAction = (isChecked, id) => {
+        if(id === 1){
+            setIsChecked1(isChecked);
+        }
+        if(id === 2){
+            setIsChecked2(isChecked);
+        }
+        if(id === 3){
+            setIsChecked3(isChecked);
+        }
+    }
+
+    const showBorder = (isChecked1 || isChecked2 || isChecked3);
 
     const switchCards = switchData.map((card, i) => 
         <div key={i}>
-            <SwitchCards id={card.id} title={card.title} text={card.text} />
+            <SwitchCards id={card.id} title={card.title} text={card.text} onAction={handleAction} />
         </div>
     );
+
+
     
     return (
         <div className="container-fluid">
@@ -38,11 +57,10 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="col-md-7 p-4">
-                    <Main />    
+                    <Main showBorder={showBorder} showTracks={isChecked1} showSolver={isChecked2} showCustomMsg={isChecked3} />    
                 </div>
                 <div className="col-md-3 aside-bg pl-3">
                     {switchCards}
-                    {/* <SwitchCards title="Ayuda antes de responder" text="Pistas" />  */}
                 </div>
             </div>
         </div>
