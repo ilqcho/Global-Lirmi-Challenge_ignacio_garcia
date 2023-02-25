@@ -17,3 +17,30 @@ code {
   border-color: #1861ac;
 }
 
+body {
+  font: 'Public Sans', 'Helvetica Neue', 'sans-serif';
+  font-style: normal;
+}
+
+p{
+  margin-bottom: 0;
+}
+
+.color-muted{
+  color: #747474;
+}
+
+.color-highlight{
+  color: #6600FF;
+}
+
+.w-33{
+  width: 33% !important;
+}
+
+.position-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+

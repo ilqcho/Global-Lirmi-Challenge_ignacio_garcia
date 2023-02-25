@@ -3,25 +3,23 @@ import './index.css';
 import CloudDoneOutlinedIcon from '@mui/icons-material/CloudDoneOutlined';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import Button from '../Button';
 
 const NavMenu = () => {
 
   return (
     <header>
-      {/* <nav className="p-4 d-flex justify-content-between navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3"> */}
       <nav className="nav-container">
         <div>
-          <p className="return-text"><ArrowBackIosIcon className="return-icon"/> Física 3º Primaria</p>
-          <h1 className="title">Características de los seres vivos</h1>
+          <p className="return-text color-highlight"><ArrowBackIosIcon className="return-icon"/> Física 3º Primaria</p>
+          <h1 className="title mt-2">Características de los seres vivos</h1>
         </div>
         <div className="d-flex align-items-baseline">
-          <div class="d-flex">
-            <CloudDoneOutlinedIcon className="cloud-icon"/> 
-            <small className="muted-text">Todos los cambios guardados</small>
+          <div className="d-flex">
+            <CloudDoneOutlinedIcon className="color-muted"/> 
+            <small className="muted-text color-muted">Todos los cambios guardados</small>
           </div>
-          <div className="menu-container">
-            <MoreVertIcon className="menu-icon"/>
-          </div>
+          <Button icon={ <MoreVertIcon /> } />
         </div>
       </nav>
     </header>

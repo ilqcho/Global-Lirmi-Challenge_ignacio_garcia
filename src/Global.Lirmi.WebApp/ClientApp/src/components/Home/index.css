@@ -1,0 +1,17 @@
+.aside-bg{
+    background: #EEEEEE;
+}
+
+.aside-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.w-90{
+    width: 90% !important;
+}
+
+.card-index{
+    line-height: 19px;
+}

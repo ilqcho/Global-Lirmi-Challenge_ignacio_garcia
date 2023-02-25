@@ -1,0 +1,23 @@
+.card-container{
+    border: 1px solid #DADADA;
+    border-radius: 12px;
+    background: #FFFFFF;
+}
+
+.card-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.card-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.card-time{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}

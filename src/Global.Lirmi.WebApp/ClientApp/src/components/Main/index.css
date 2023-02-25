@@ -1,0 +1,46 @@
+.main-border{
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.input-md{
+    height: 56px;
+}
+
+.input-lg{
+    height: 121px;
+}
+
+.select-md{
+    height: 40px;
+}
+
+.select{
+    padding: 8px 14px !important;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+.select-label{
+    position: absolute;
+    margin-left: 15px;
+    z-index: 100;
+    font-size: 12px;
+    line-height: 14px;
+    width: 53px;
+    height: 14px;
+    background: #FFFFFF;
+}
+
+textarea{
+    resize: none;
+}
+
+.circle-icon{
+    font-size: 1.8rem !important;
+    font-weight: 400 !important;
+}

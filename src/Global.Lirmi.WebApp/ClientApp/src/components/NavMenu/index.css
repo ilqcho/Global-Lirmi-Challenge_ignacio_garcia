@@ -1,23 +1,4 @@
-﻿a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
-}
-
-html {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-.nav-container{
+﻿.nav-container{
   display: flex;
   justify-content: space-between;
   padding: 24px;
@@ -25,34 +6,12 @@ html {
   height: 120px;
   background: #FFFFFF;
   box-shadow: 0px 1px 0px #DADADA;
+  position: relative;
 }
-
-.menu-container{
-  border: 0.5px solid #DADADA;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.16);
-  border-radius: 8px;
-  width: 40px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  margin-left: 15px;
-}
-
-.menu-icon{
-  font-size: 18px !important;
-} 
 
 .return-icon{
   font-size: 14px !important;
   margin-bottom: 5px !important;
-}
-
-/* HACER CLASES DE TEXTOS Y SEPARAR LOS COLOREs */
-
-.cloud-icon{
-  color: #747474;
 }
 
 .title{
@@ -63,14 +22,11 @@ html {
 .muted-text{
   margin-left: 5px !important;
   line-height: 26px;
-  color: #747474;
 }
 
 .return-text{
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  color: #6600FF;
   cursor: pointer;
 }
-

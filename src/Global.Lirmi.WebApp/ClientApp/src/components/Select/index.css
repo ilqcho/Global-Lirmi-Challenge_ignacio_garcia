@@ -1,0 +1,30 @@
+.select-container{
+    padding: 3px;
+    border-radius: 32px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.active-bg{
+    background: #C7F4CB;
+    border-color:#C7F4CB;
+}
+
+.validate-bg{
+    background: #DFF9FF;
+    border-color:#DFF9FF;
+}
+
+.delete-bg{
+    background: #EAEAEA;
+    border-color:#EAEAEA;
+}
+
+.inactive-bg{
+    background: #FFD5D2;
+    border-color:#FFD5D2;
+}
+
+select option {
+    background: #FFFFFF !important;
+}
