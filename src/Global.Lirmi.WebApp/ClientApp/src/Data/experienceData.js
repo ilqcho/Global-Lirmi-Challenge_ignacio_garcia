@@ -4,6 +4,7 @@ const experienceData = [
         title: 'Recurso',
         text: 'La caperucita roja',
         time: '17 min',
+        state: 'Active',
         showIcon: false
     },
     {
@@ -11,6 +12,7 @@ const experienceData = [
         title: 'Selección múltiple',
         text: 'Nombre de la actividad',
         time: '17 min',
+        state: 'Active',
         showIcon: true
     },
     {
@@ -18,6 +20,7 @@ const experienceData = [
         title: 'Completar arrastrando',
         text: 'Nombre de la actividad',
         time: '17 min',
+        state: 'Active',
         showIcon: true
     },
     {
@@ -25,6 +28,7 @@ const experienceData = [
         title: 'Etiquetar',
         text: 'Nombre de la actividad',
         time: '17 min',
+        state: 'Active',
         showIcon: true
     },
 ]

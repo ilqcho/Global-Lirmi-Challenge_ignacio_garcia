@@ -3,7 +3,8 @@ import './index.css';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Select from '../Select';
 
-const ExperienceCards = ({ title, text, time, showIcon }) => {
+const ExperienceCards = ({ id, title, text, time, showIcon }) => { 
+
     return(
         <div className="card-container p-3">
             <div className="d-flex justify-content-between mb-1">

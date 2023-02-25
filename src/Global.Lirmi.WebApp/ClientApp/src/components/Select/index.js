@@ -10,8 +10,7 @@ const Select = () => {
     );
 
     const handleChange = (e) =>{
-        setSelected(e.target.value)
-
+        setSelected(e.target.value);
     }
     
     let className = 'select-container';
