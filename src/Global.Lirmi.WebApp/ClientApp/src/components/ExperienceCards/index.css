@@ -5,17 +5,10 @@
     height: 130px;
 }
 
-.card-container:active{
+.card-container:hover{
     background: #6600FF;
-    color: #FFFFFF;
-}
-
-/* .card-text:active{
     color: #FFFFFF !important;
 }
-.card-time:active {
-    color: #FFFFFF !important;
-}  */
 
 .card-title{
     font-weight: 700;

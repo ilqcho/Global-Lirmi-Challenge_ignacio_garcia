@@ -28,7 +28,7 @@ const Select = () => {
     return(
         <div>
             <select
-                onChange={e => handleChange(e)}
+                onChange={handleChange}
                 className={className}
                 >
                 {showOptions}

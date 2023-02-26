@@ -19,8 +19,8 @@ const Home = () => {
         <div className="d-flex justify-content-between mt-3">
             <p className="card-index">{i + 1}</p>
             <Draggable
-                draggableId={`draggable.${i}`}
-                key={i}
+                draggableId={`draggable.${card.id}`}
+                key={card.id}
                 index={i}
             >
                 {(provided) => (
@@ -31,7 +31,6 @@ const Home = () => {
                         ref={provided.innerRef}
                     >
                         <ExperienceCards 
-                            id={card.id}
                             title={card.title} 
                             text={card.text} 
                             time={card.time} 
@@ -74,13 +73,13 @@ const Home = () => {
     return (
         <div className="container-fluid">
             <div className="row justify-content-center">
-                <div className="col-md-2 aside-bg pt-3 pb-3">
-                    <div className="position-between aside-container">
+                <div className="col-md-2 aside-bg pt-3 pb-3 aside-container">
+                    <div className="position-between">
                         <h3 className="aside-title">Experiencias</h3>   
                         <Button icon={ <AddIcon /> } />
                     </div>
                     <div>
-                        <DragDropContext onDragEnd={dragEnd} >
+                        <DragDropContext onDragEnd={dragEnd}>
                             <Droppable 
                                 droppableId="experienceSequence"
                                 direction="vertical"
